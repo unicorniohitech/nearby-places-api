@@ -10,7 +10,7 @@ class CreatePlaces < ActiveRecord::Migration[5.1]
       t.string :state_code
       t.float :latitude
       t.float :longitude
-      t.floar :rating_avg
+      t.float :rating_avg
       t.float :total_rating, default: 0
       t.datetime :deleted_at
 
