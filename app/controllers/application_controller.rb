@@ -1,0 +1,12 @@
+class ApplicationController < ActionController::API
+
+  def not_found
+    render json: { error: 'not_found' }
+  end
+    
+  def authorize_request
+    @current_user = ApiRequestAuth.call(request.headers).result
+    
+    render json: { error: 'Access deneid! Please, sign in to update your credentials.' }, status: 401 unless @current_user
+  end
+end
