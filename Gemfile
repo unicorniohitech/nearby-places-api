@@ -12,7 +12,7 @@ gem 'rails', '~> 5.1.7'
 # Postgresql
 gem 'pg', '>= 0.18', '< 2.0'
 # Puma
-gem 'puma', '~> 3.7'
+gem 'puma', '~> 3.12'
 #Bcrypt
 gem 'bcrypt', '~> 3.1.7'
 
